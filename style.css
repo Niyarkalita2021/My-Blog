@@ -79,27 +79,27 @@ p{
 .menu{
     list-style: none;
     font-family: sans-serif;
-    position: absolute;
-    top: 10px;
-    right: 30px;
+    position: fixed;
+    top: 0px;
     z-index: 10;
     cursor: pointer;
+    width: 100%;
     
 }
 
 .links{
-    float:left;
     color : darkslategrey;
     padding-right:9px ;
     padding-left: 9px;
-    padding-top: 5px;
-    padding-bottom: 5px;
     font-family: fantasy;
     font-size: 20px;
+    display: inline;
 }
 
 .links:hover{
    background-color: aqua;
+   font-size: 25px;
+   text-decoration: underline;
 }
 
 html{
@@ -107,10 +107,32 @@ html{
 }
 
 a{
-    text-decoration: none;
+    text-decoration:none;
+    color: blue;
+    text-shadow: 1px 1px black;
     
 }
 
 .article:hover{
     color: peachpuff;
+}
+
+#writings a{
+   text-shadow: none !important;
+    text-decoration: underline !important;
+    color: darkmagenta !important;
+}
+
+#contact{
+    background-color: chartreuse;
+    
+}
+
+.contact_1 a{
+    color: currentColor;
+    text-shadow: none;
+}
+
+.contact_1 h3{
+    display: inline;
 }
